@@ -37,5 +37,7 @@ public class puzzle : MonoBehaviour
     public string reward = "";
 
     // Put in a var for which map to use later when we decide how we want those to work
+    public SinglePlayerGameManager singlePlayerGameManager;
+    public Map map;
 }
 

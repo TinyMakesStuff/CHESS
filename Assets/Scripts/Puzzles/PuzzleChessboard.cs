@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using TMPro;
+using NUnit.Framework;
 
 // public enum SpecialMove
 // {
@@ -879,7 +880,7 @@ public class PuzzleChessboard : MonoBehaviour
     {
         for (int i = 0; i < moves.Count; i++)
         {
-            if (moves[i].x == pos.x && moves[i].y == pos.y)
+            if ((moves[i].x == pos.x && moves[i].y == pos.y))
             {
                 return true;
             }

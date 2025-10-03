@@ -85,13 +85,17 @@ public class puzzle1 : puzzle
         movedPieces[1] = "StandardQueen";
 
         // STEP 5
-        // Set the puzzle description and the reward
+        // Set the puzzle description, map, and the reward
 
         // Sets the reward
         reward = "Nothing :P";
-        
+
         // sets puzzle description
         puzzleDesc = "Mate in two";
+
+        // sets the map
+        singlePlayerGameManager = GameObject.Find("Test Object To Carry Data").GetComponent<SinglePlayerGameManager>();
+        map = singlePlayerGameManager.mapList[1];
     }
 
     // Update is called once per frame
